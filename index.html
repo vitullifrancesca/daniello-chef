@@ -78,13 +78,21 @@
     </div>
 </section>
 
-    <section id="contatti">
-    <h2>Contattami</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiDR7I0fNdnlkO3nIp5U6GjGoW8Q0hCvHpzGnIa7cb6kLhxg/viewform?embedded=true" 
-            width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">
-        Caricamento…
-    </iframe>
-</section>
+   <section id="contatti">
+        <h2>Contattami</h2>
+        <form action="mailto: vitullifrancesca@gmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="messaggio">Messaggio:</label>
+            <textarea id="messaggio" name="messaggio" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+    </section>
    
 </body>
 </html>
