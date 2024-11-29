@@ -38,3 +38,44 @@ input, textarea {
 #galleria a {
     color: black;
 }
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #800000;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
