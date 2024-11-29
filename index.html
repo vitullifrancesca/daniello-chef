@@ -129,23 +129,29 @@
 
         /* Sezione "La mia Storia" con due box */
         #storia-sezione {
-            #storia-sezione {
             display: flex;
-            justify-content: space-between;
-            margin: 40px 20px;
-        }
+    justify-content: space-between;  /* Aggiunto per distribuire lo spazio */
+    gap: 20px;
+    margin: 40px 20px;
+}
 
-        .box {
-            width: 40%;
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
-        }
+.box {
+    width: 48%; /* Imposta la larghezza del box per farli essere della stessa dimensione */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Altezza fissa per entrambi i box */
+    flex-direction: column;
+}
 
-        .box.bordeaux {
-            background-color: #800000; /* Bordeaux */
-        }
+.box img {
+    width: 100%;  /* Fa sì che l'immagine occupi tutta la larghezza del box */
+    height: auto;
+    border-radius: 10px;
 
         .box img {
             width: 40%;
