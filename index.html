@@ -37,7 +37,7 @@
             padding: 20px;
             border-radius: 10px;
             color: black;
-            max-width: 600px;
+            max-width: 800px;
             margin: 20px auto;
         }
 
@@ -127,38 +127,33 @@
             border-radius: 8px;
         }
 
-        /* Sezione "La mia Storia" con due box */
-        #storia-sezione {
+        /* Sezione "Contattami" con layout flessibile */
+        #contatti form {
             display: flex;
-            justify-content: center;
-            gap: 20px; /* Aggiunto gap tra i box */
-            margin: 40px 20px;
+            justify-content: space-between;
+            gap: 20px; /* Spazio tra i due blocchi */
         }
 
-        .box {
-            width: 60%; /* Riquadro al 60% della larghezza */
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
+        /* Blocchi a sinistra (nome, email) */
+        #contatti .form-left {
+            width: 45%; /* Larghezza del 45% */
         }
 
-        .box.bordeaux {
-            background-color: #800000; /* Bordeaux */
+        /* Blocchi a destra (messaggio) */
+        #contatti .form-right {
+            width: 45%; /* Larghezza del 45% */
         }
 
-        .box img {
-            width: 100%;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
+        /* Sezione mobile: riorganizzare i campi in una colonna */
+        @media (max-width: 768px) {
+            #contatti form {
+                flex-direction: column;
+                align-items: center;
+            }
 
-        /* Link nel box */
-        .box a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+            #contatti .form-left, #contatti .form-right {
+                width: 100%; /* Occupano tutta la larghezza su schermi piccoli */
+            }
         }
 
     </style>
@@ -183,7 +178,7 @@
     <section id="galleria">
         <h2> </h2>
         <div class="gallery">
-            <img src="images/piatto8.jpg" alt="Piatto 8">
+            <img src="images/piatto8.jpeg" alt="Piatto 8">
             <img src="images/piatto7.jpg" alt="Piatto 7">
             <img src="images/piatto3.jpeg" alt="Piatto 3">
             <img src="images/piatto5.jpg" alt="Piatto 5">
@@ -199,40 +194,22 @@
         </p>
     </section>
 
-    <!-- Sezione "La mia Storia" con due box -->
-    <section id="storia-sezione">
-        <div class="box bordeaux">
-            <h3><a href="storia.html">La mia Storia</a></h3>
-            <p>Scopri la mia storia e il mio percorso culinario.</p>
-        </div>
-        <div class="box">
-            <img src="images/images10.jpg" alt="Foto Chef Barbara">
-        </div>
-    </section>
-
-    <section id="social">
-        <h2>Seguimi sui social</h2>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/barbara_daniello/profilecard/?igsh=MW5qN2hvY3hsaDVlaQ==" target="_blank">
-                <img src="images/instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.tiktok.com/@barbaradaniellofficial" target="_blank">
-                <img src="images/tiktok-icon.webp" alt="TikTok">
-            </a>
-        </div>
-    </section>
-
+    <!-- Sezione "Contattami" -->
     <section id="contatti">
         <h2>Contattami</h2>
         <form action="mailto:vitullifrancesca@gmail.com" method="post" enctype="text/plain">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <div class="form-left">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-            <label for="messaggio">Messaggio:</label>
-            <textarea id="messaggio" name="messaggio" required></textarea>
+            <div class="form-right">
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" required></textarea>
+            </div>
 
             <button type="submit">Invia</button>
         </form>
