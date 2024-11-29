@@ -37,18 +37,8 @@
             padding: 20px;
             border-radius: 10px;
             color: black;
-            max-width: 900px;
+            max-width: 600px;
             margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap; /* Permette la disposizione in colonne */
-            gap: 20px;
-        }
-
-        .form-column {
-            display: flex;
-            flex-direction: column;
-            flex: 1; /* Ogni colonna occupa la stessa larghezza */
-            min-width: 250px; /* Impostiamo una larghezza minima */
         }
 
         input, textarea, button {
@@ -57,14 +47,6 @@
             margin: 10px 0;
             padding: 10px;
             font-family: "Courier New", Courier, monospace;
-        }
-
-        textarea {
-            min-height: 150px; /* Altezza minima per la textarea */
-        }
-
-        button {
-            margin-top: 20px; /* Pulsante distanziato dal contenuto */
         }
 
         a {
@@ -159,6 +141,11 @@
             border-radius: 10px;
             color: white;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px; /* Altezza fissa per centrare verticalmente */
+            flex-direction: column;
         }
 
         .box.bordeaux {
@@ -217,20 +204,41 @@
         </p>
     </section>
 
+    <!-- Sezione "La mia Storia" con due box -->
+    <section id="storia-sezione">
+        <div class="box bordeaux">
+            <h3><a href="storia.html">La mia Storia</a></h3>
+            <p>Scopri la mia storia e il mio percorso culinario.</p>
+        </div>
+        <div class="box">
+            <img src="images/images10.jpg" alt="Foto Chef Barbara">
+        </div>
+    </section>
+
+    <section id="social">
+        <h2>Seguimi sui social</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/barbara_daniello/profilecard/?igsh=MW5qN2hvY3hsaDVlaQ==" target="_blank">
+                <img src="images/instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@barbaradaniellofficial" target="_blank">
+                <img src="images/tiktok-icon.webp" alt="TikTok">
+            </a>
+        </div>
+    </section>
+
     <section id="contatti">
         <h2>Contattami</h2>
         <form action="mailto:vitullifrancesca@gmail.com" method="post" enctype="text/plain">
-            <div class="form-column">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-column">
-                <label for="messaggio">Messaggio:</label>
-                <textarea id="messaggio" name="messaggio" required></textarea>
-            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="messaggio">Messaggio:</label>
+            <textarea id="messaggio" name="messaggio" required></textarea>
+
             <button type="submit">Invia</button>
         </form>
     </section>
