@@ -78,10 +78,11 @@ body {
 
 .storia-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    background-color: #800000; /* Colore di sfondo Bordeaux */
     padding: 20px;
-}
+    border-radius: 10px;
+    color: white
 
 .storia-img img {
     width: 45%; /* Imposta la larghezza dell'immagine */
