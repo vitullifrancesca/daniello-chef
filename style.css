@@ -76,4 +76,20 @@ body {
     height: 30px;
 }
 
+.storia-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.storia-img img {
+    width: 45%; /* Imposta la larghezza dell'immagine */
+    border-radius: 10px;
+}
+
+.storia-text {
+    width: 50%; /* Imposta la larghezza del testo */
+    text-align: left;
+}
 
