@@ -90,7 +90,11 @@ body {
 }
 
 .storia-text {
-    width: 50%; /* Imposta la larghezza del testo */
-    text-align: justify;
+    width: 80%; /* Imposta la larghezza del testo */
+    text-align: justify; /* Giustifica il testo */
+    margin-left: 20px; /* Distanza tra immagine e testo */
+    font-size: 1.1em; /* Regola la dimensione del font se necessario */
+    padding: 10px; /* Spazio interno al box */
 }
+
 
