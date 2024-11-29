@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benvenuti nella Galleria</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/piatto1.jpeg" alt="Piatto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/piatto2.jpeg" alt="Piatto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/piatto3.jpeg" alt="Piatto 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/piatto4.jpg" alt="Piatto 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/piatto5.jpg" alt="Piatto 5">
+        </div>
+        <div class="gallery-item">
+            <img src="images/piatto6.jpg" alt="Piatto 6">
+        </div>
+    </div>
+</body>
+</html>
