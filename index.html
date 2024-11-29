@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef Barbara D'Aniello</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
@@ -126,6 +126,39 @@
             color: #333;
             border-radius: 8px;
         }
+
+        /* Sezione "La mia Storia" con due box */
+        #storia-sezione {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 20px;
+        }
+
+        .box {
+            width: 48%;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .box.bordeaux {
+            background-color: #800000; /* Bordeaux */
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Link nel box */
+        .box a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -162,6 +195,17 @@
         <p>
             Cucinare non è solo saziare, gli ingredienti necessari sono: curiosità, passione, tenacia, un pizzico di tecnica, gusto q.b., abbondanza di ricette giuste. Il piatto è perfetto, se aggiungi anche ricordi, storie, allora sei lo chef di casa tua.
         </p>
+    </section>
+
+    <!-- Sezione "La mia Storia" con due box -->
+    <section id="storia-sezione">
+        <div class="box bordeaux">
+            <h3><a href="storia.html">La mia Storia</a></h3>
+            <p>Scopri la mia storia e il mio percorso culinario.</p>
+        </div>
+        <div class="box">
+            <img src="images/images10.jpg" alt="Foto Chef Barbara">
+        </div>
     </section>
 
     <section id="social">
