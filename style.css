@@ -79,10 +79,11 @@ body {
 .storia-container {
     display: flex;
     align-items: center;
-    background-color: #800000; /* Colore di sfondo Bordeaux */
+    background-color: white; /* Sfondo bianco */
     padding: 20px;
+    border: 2px solid #800000; /* Bordo bordeaux */
     border-radius: 10px;
-    color: white;
+    color: #800000; /* Colore del testo bordeaux */
 }
 
 .storia-img {
@@ -101,3 +102,4 @@ body {
     font-size: 1.1em; /* Regola la dimensione del font se necessario */
     padding: 10px; /* Spazio interno al box */
 }
+
