@@ -34,3 +34,7 @@ input, textarea {
     margin: 5px 0;
     box-sizing: border-box;
 }
+
+#galleria a {
+    color: black;
+}
