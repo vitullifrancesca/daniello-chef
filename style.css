@@ -85,12 +85,12 @@ body {
     color: white
 
 .storia-img img {
-    width: 45%; /* Imposta la larghezza dell'immagine */
+    width: 50%; /* Imposta la larghezza dell'immagine */
     border-radius: 10px;
 }
 
 .storia-text {
     width: 50%; /* Imposta la larghezza del testo */
-    text-align: left;
+    text-align: justify;
 }
 
