@@ -73,7 +73,7 @@
 
         /* Sezione contatti con sfondo bordeaux */
         #contatti {
-            background-color: bordeaux;
+            background-color: #800000; /* Bordeaux */
             padding: 30px;
             color: white;
         }
@@ -81,7 +81,7 @@
         #footer-contatti {
             text-align: center;
             padding: 20px;
-            background-color: bordeaux;
+            background-color: #800000; /* Bordeaux */
             color: white;
         }
 
@@ -92,7 +92,7 @@
 
         /* Banner in alto bordeaux con social */
         #social-banner {
-            background-color: bordeaux;
+            background-color: #800000; /* Bordeaux */
             padding: 10px 0;
             text-align: center;
         }
@@ -106,6 +106,25 @@
             font-size: 18px;
             text-decoration: none;
             margin: 0 15px;
+        }
+
+        /* Mobile Responsive: aggiungere uno spazio tra i social */
+        @media (max-width: 600px) {
+            #social-banner a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+        }
+
+        /* Paragrafo dopo la galleria */
+        #paragrafo {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -133,6 +152,13 @@
             <img src="images/piatto3.jpeg" alt="Piatto 3">
             <img src="images/piatto2.jpeg" alt="Piatto 2">
         </div>
+    </section>
+
+    <!-- Paragrafo aggiunto dopo la galleria -->
+    <section id="paragrafo">
+        <p>
+            Cucinare non è solo saziare, gli ingredienti necessari sono: curiosità, passione, tenacia, un pizzico di tecnica, gusto q.b., abbondanza di ricette giuste. Il piatto è perfetto, se aggiungi anche ricordi, storie, allora sei lo chef di casa tua.
+        </p>
     </section>
 
     <section id="social">
