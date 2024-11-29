@@ -3,8 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chef [Nome]</title>
+    <title>Chef Barbara D'Aniello</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            animation: rainbow 15s ease infinite;
+            color: white;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        input, textarea, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,8 +61,8 @@
         <h2>Galleria</h2>
         <div class="gallery">
             <img src="images/piatto1.jpeg" alt="Piatto 1">
-            <img src="images/piatto2.jpeg" alt="Piatto 2">
-            <img src="images/piatto3.jpeg" alt="Piatto 3">
+            <img src="images/piatto2.jpg" alt="Piatto 2">
+            <img src="images/piatto3.jpg" alt="Piatto 3">
         </div>
     </section>
 
@@ -40,4 +86,6 @@
 
             <button type="submit">Invia</button>
         </form>
- 
+    </section>
+</body>
+</html>
