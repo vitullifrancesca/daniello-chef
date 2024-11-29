@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuti dallo Chef [Nome]</title>
+    <title>Chef [Nome]</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Benvenuti nel mio ristorante online!</h1>
-    <p>Scopri le ricette e i piatti migliori del nostro menu.</p>
-</body>
-</html>
+    <header>
+        <h1>Benvenuti nel mondo dello Chef [Nome]</h1>
+    </header>
+    
+    <section id="galleria">
+        <h2>Galleria</h2>
+        <div class="gallery">
+            <img src="images/nuovo_piatto.jpg" alt="Nuovo Piatto">
+            <img src="images/piatto2.jpg" alt="Piatto 2">
+            <img src="images/piatto3.jpg" alt="Piatto 3">
+        </div>
+    </section>
+
+    <section id="social">
+        <h2>Seguimi sui social</h2>
+        <a href="https://instagram.com/nomechef" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/@nomechef" target="_blank">TikTok</a>
+    </section>
+
+    <section id="contatti">
+        <h2>Contattami</h2>
+        <form action="mailto:nomechef@example.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="messaggio">Messaggio:</label>
+            <textarea id="messaggio" name="messaggio" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+ 
