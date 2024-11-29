@@ -96,5 +96,28 @@
             <img src="images/piatto15.jpeg" alt="Piatto 15">
         </div>
     </div>
+    <div id="modal" onclick="closeModal()">
+        <img id="modal-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+
+        // Open the modal when an image is clicked
+        images.forEach(image => {
+            image.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImg.src = this.src;  // Set the source of the modal image to the clicked image
+            });
+        });
+
+        // Close the modal when clicked
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
+
