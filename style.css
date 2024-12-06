@@ -104,12 +104,14 @@ body {
     .navbar ul {
         flex-direction: column;
         gap: 10px;
+        width: 100%; /* Forza la navbar a occupare tutta la larghezza */
     }
 
     /* Banner che si adatta meglio ai dispositivi mobili */
     #contatti-banner {
         flex-direction: column; /* Dispone gli elementi in verticale */
         padding: 20px; /* Aumenta il padding per maggiore spaziatura */
+        width: 100%; /* Forza il banner a occupare tutta la larghezza */
     }
 
     /* Modifica il layout della storia-container */
@@ -150,4 +152,9 @@ body {
         flex: 1;
         min-width: 100%; /* Forza l'elemento a occupare tutta la larghezza disponibile */
     }
+}
+
+/* Cambia il colore della scritta "Galleria" in bianco */
+#galleria a {
+    color: white; /* Imposta il colore del link su bianco */
 }
