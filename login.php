@@ -3,7 +3,7 @@ session_start();
 
 // Verifica se la password è corretta
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if ($_POST['password'] === 'tuaMammaPassword') {  // Cambia con la tua password
+    if ($_POST['password'] === 'mamma') {  // Cambia con la tua password
         $_SESSION['authenticated'] = true;
         header("Location: upload.php");
         exit;
