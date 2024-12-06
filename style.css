@@ -109,7 +109,7 @@ body {
 @media (max-width: 768px) {
     /* Navbar in verticale */
     .navbar ul {
-        flex-direction: column;
+   
         gap: 10px;
         width: 100%; /* Forza la navbar a occupare tutta la larghezza */
     }
