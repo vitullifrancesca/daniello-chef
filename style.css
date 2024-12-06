@@ -78,7 +78,8 @@ body {
 
 .storia-container {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Cambia layout a colonna */
+    align-items: center; /* Centra immagine e testo */
     background-color: white; /* Sfondo bianco */
     padding: 20px;
     border: 2px solid #800000; /* Bordo bordeaux */
@@ -87,8 +88,8 @@ body {
 }
 
 .storia-img {
-    width: 50%; /* Imposta la larghezza dell'immagine */
-    margin-right: 20px; /* Distanza tra immagine e testo */
+    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+    margin: 0; /* Rimuove margine laterale */
 }
 
 .storia-img img {
@@ -97,9 +98,9 @@ body {
 }
 
 .storia-text {
-    width: 50%; /* Imposta la larghezza del testo */
+    width: 100%; /* Il testo occupa tutta la larghezza del contenitore */
+    margin-top: 20px; /* Aggiunge spazio tra immagine e testo */
     text-align: justify; /* Giustifica il testo */
     font-size: 1.1em; /* Regola la dimensione del font se necessario */
     padding: 10px; /* Spazio interno al box */
 }
-
