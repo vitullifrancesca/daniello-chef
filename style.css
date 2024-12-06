@@ -1,46 +1,33 @@
-/* Impostazioni di base */
+/* Stili generali per il body */
 body {
     font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Banner contatti */
+/* Stile del banner */
 #contatti-banner {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-between; /* Distribuisce gli elementi orizzontalmente */
+    align-items: center; /* Allinea verticalmente gli elementi */
+    padding: 10px 20px; /* Aggiunge padding attorno al contenuto */
     background-color: #800000;
     color: white;
-    flex-wrap: wrap; /* Adatta il contenuto su più righe per dispositivi piccoli */
 }
 
+/* Icona di Instagram */
+#contatti-banner img {
+    width: 30px; /* Riduce la dimensione dell'icona */
+    height: 30px;
+    object-fit: contain; /* Mantiene le proporzioni */
+}
+
+/* Contenitore di "Contatti" */
 #contatti, #footer-contatti {
-    margin-right: 15px;
-    flex: 1;
+    margin-right: 15px; /* Riduce lo spazio tra le sezioni */
 }
 
-/* Form */
-form div {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-/* Galleria */
-#galleria a {
-    color: black;
-}
-
-/* Navbar */
+/* Stile della navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -49,20 +36,22 @@ input, textarea {
     padding: 10px 0;
 }
 
+/* Lista della navbar */
 .navbar ul {
     display: flex;
     list-style: none;
     gap: 20px;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Consente di andare su più righe per dispositivi piccoli */
 }
 
+/* Elementi della navbar */
 .navbar li {
     display: flex;
     align-items: center;
 }
 
+/* Link della navbar */
 .navbar a {
     color: white;
     text-decoration: none;
@@ -70,67 +59,38 @@ input, textarea {
     padding: 8px;
 }
 
+/* Icona della navbar */
 .navbar img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
-/* Contenitore Storia */
+/* Stile del contenitore "storia-container" */
 .storia-container {
     display: flex;
     flex-direction: column; /* Dispone immagine e testo in verticale */
-    background-color: white;
+    background-color: white; /* Sfondo bianco */
     padding: 20px;
-    border: 2px solid #800000;
+    border: 2px solid #800000; /* Bordo bordeaux */
     border-radius: 10px;
-    color: #800000;
+    color: #800000; /* Colore del testo bordeaux */
 }
 
 .storia-img {
-    width: 100%;
-    text-align: center;
+    width: 100%; /* L'immagine occupa tutta la larghezza */
+    text-align: center; /* Centra l'immagine orizzontalmente */
 }
 
 .storia-img img {
-    max-width: 100%;
+    max-width: 100%; /* L'immagine si adatta alla larghezza della pagina */
     height: auto;
     border-radius: 10px;
 }
 
 .storia-text {
-    width: 100%;
-    text-align: justify;
-    font-size: 1.1em;
-    margin: 20px 0;
-    padding: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #contatti-banner {
-        flex-direction: column; /* Dispone i blocchi in verticale */
-        text-align: center;
-    }
-
-    #contatti, #footer-contatti {
-        margin-right: 0; /* Rimuove il margine laterale */
-        margin-bottom: 10px; /* Aggiunge spazio verticale */
-    }
-
-    .navbar ul {
-        flex-direction: column; /* Dispone gli elementi della navbar in verticale */
-        gap: 10px;
-    }
-
-    .navbar a {
-        font-size: 16px; /* Riduce leggermente la dimensione del testo */
-    }
-
-    .storia-container {
-        padding: 10px; /* Riduce il padding */
-    }
-
-    .storia-text {
-        font-size: 1em; /* Riduce la dimensione del testo */
-    }
+    width: 100%; /* Il testo occupa tutta la larghezza */
+    text-align: justify; /* Giustifica il testo */
+    font-size: 1.1em; /* Regola la dimensione del font */
+    margin: 20px 0; /* Spazio sopra e sotto */
+    padding: 0; /* Rimuove padding extra */
 }
