@@ -55,6 +55,7 @@ input, textarea {
 body {
     font-family: "Courier New", Courier, monospace;
 }
+
 /* Stile della navbar */
 .navbar {
     display: flex;
@@ -121,4 +122,40 @@ body {
     font-size: 1.1em; /* Regola la dimensione del font */
     margin: 20px 0; /* Spazio sopra e sotto */
     padding: 0; /* Rimuove padding extra */
+}
+
+/* Media query per schermi piccoli (mobile) */
+@media (max-width: 768px) {
+    /* Modifica la navbar per schermi più piccoli */
+    .navbar ul {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        gap: 10px; /* Riduce la distanza tra gli elementi */
+    }
+
+    /* Modifica il layout del banner */
+    #contatti-banner {
+        flex-direction: column; /* Dispone gli elementi in colonna */
+        padding: 20px; /* Aumenta il padding */
+    }
+
+    /* Adatta il contenuto della "storia-container" */
+    .storia-container {
+        flex-direction: column; /* Dispone immagine e testo in verticale */
+    }
+
+    .storia-img, .storia-text {
+        width: 100%; /* Assicura che immagine e testo occupino tutta la larghezza */
+    }
+
+    /* Ridimensiona l'immagine nella versione mobile */
+    .storia-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Riduce la dimensione del testo nella versione mobile */
+    .storia-text {
+        font-size: 1em; /* Riduce la dimensione del font */
+        margin: 10px 0; /* Riduce lo spazio tra i paragrafi */
+    }
 }
