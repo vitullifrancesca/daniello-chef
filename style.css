@@ -78,8 +78,7 @@ body {
 
 .storia-container {
     display: flex;
-    flex-direction: column; /* Cambia layout a colonna */
-    align-items: center; /* Centra immagine e testo */
+    flex-direction: column; /* Dispone immagine e testo in verticale */
     background-color: white; /* Sfondo bianco */
     padding: 20px;
     border: 2px solid #800000; /* Bordo bordeaux */
@@ -88,19 +87,20 @@ body {
 }
 
 .storia-img {
-    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
-    margin: 0; /* Rimuove margine laterale */
+    width: 100%; /* L'immagine occupa tutta la larghezza */
+    text-align: center; /* Centra l'immagine orizzontalmente */
 }
 
 .storia-img img {
-    width: 100%; /* L'immagine si adatta alla larghezza del contenitore */
+    max-width: 100%; /* L'immagine si adatta alla larghezza della pagina */
+    height: auto;
     border-radius: 10px;
 }
 
 .storia-text {
-    width: 100%; /* Il testo occupa tutta la larghezza del contenitore */
-    margin-top: 20px; /* Aggiunge spazio tra immagine e testo */
+    width: 100%; /* Il testo occupa tutta la larghezza */
     text-align: justify; /* Giustifica il testo */
-    font-size: 1.1em; /* Regola la dimensione del font se necessario */
-    padding: 10px; /* Spazio interno al box */
+    font-size: 1.1em; /* Regola la dimensione del font */
+    margin: 20px 0; /* Spazio sopra e sotto */
+    padding: 0; /* Rimuove padding extra */
 }
