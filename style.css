@@ -1,27 +1,27 @@
+/* Impostazioni di base */
 body {
     font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Banner contatti */
 #contatti-banner {
     display: flex;
     justify-content: space-between;
-    padding: 20px; /* Reduced padding */
+    padding: 20px;
     background-color: #800000;
     color: white;
+    flex-wrap: wrap; /* Adatta il contenuto su più righe per dispositivi piccoli */
 }
 
 #contatti, #footer-contatti {
-    margin-right: 15px; /* Reduced space between sections */
+    margin-right: 15px;
+    flex: 1;
 }
 
-#contatti {
-    flex: 1; /* Allow "Contattami" to take available space */
-}
-
-#footer-contatti {
-    flex: 1; /* Allow "Contatti" to take available space */
-}
-
+/* Form */
 form div {
     width: 100%;
     padding: 10px;
@@ -35,14 +35,12 @@ input, textarea {
     box-sizing: border-box;
 }
 
+/* Galleria */
 #galleria a {
     color: black;
 }
 
-body {
-    font-family: "Courier New", Courier, monospace;
-}
-
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -57,6 +55,7 @@ body {
     gap: 20px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Consente di andare su più righe per dispositivi piccoli */
 }
 
 .navbar li {
@@ -76,31 +75,62 @@ body {
     height: 30px;
 }
 
+/* Contenitore Storia */
 .storia-container {
     display: flex;
     flex-direction: column; /* Dispone immagine e testo in verticale */
-    background-color: white; /* Sfondo bianco */
+    background-color: white;
     padding: 20px;
-    border: 2px solid #800000; /* Bordo bordeaux */
+    border: 2px solid #800000;
     border-radius: 10px;
-    color: #800000; /* Colore del testo bordeaux */
+    color: #800000;
 }
 
 .storia-img {
-    width: 100%; /* L'immagine occupa tutta la larghezza */
-    text-align: center; /* Centra l'immagine orizzontalmente */
+    width: 100%;
+    text-align: center;
 }
 
 .storia-img img {
-    max-width: 100%; /* L'immagine si adatta alla larghezza della pagina */
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
 .storia-text {
-    width: 100%; /* Il testo occupa tutta la larghezza */
-    text-align: justify; /* Giustifica il testo */
-    font-size: 1.1em; /* Regola la dimensione del font */
-    margin: 20px 0; /* Spazio sopra e sotto */
-    padding: 0; /* Rimuove padding extra */
+    width: 100%;
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 20px 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contatti-banner {
+        flex-direction: column; /* Dispone i blocchi in verticale */
+        text-align: center;
+    }
+
+    #contatti, #footer-contatti {
+        margin-right: 0; /* Rimuove il margine laterale */
+        margin-bottom: 10px; /* Aggiunge spazio verticale */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Dispone gli elementi della navbar in verticale */
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px; /* Riduce leggermente la dimensione del testo */
+    }
+
+    .storia-container {
+        padding: 10px; /* Riduce il padding */
+    }
+
+    .storia-text {
+        font-size: 1em; /* Riduce la dimensione del testo */
+    }
 }
