@@ -30,6 +30,13 @@ body {
     flex: 1;
     min-width: 100px; /* Imposta una larghezza minima per evitare che gli elementi scompaiano */
 }
+#galleria a {
+    color: black;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
 
 /* Modifiche alla navbar */
 .navbar {
