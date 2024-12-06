@@ -27,6 +27,34 @@ body {
     margin-right: 15px; /* Riduce lo spazio tra le sezioni */
 }
 
+#contatti {
+    flex: 1; /* Allow "Contattami" to take available space */
+}
+
+#footer-contatti {
+    flex: 1; /* Allow "Contatti" to take available space */
+}
+
+form div {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+#galleria a {
+    color: black;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+}
 /* Stile della navbar */
 .navbar {
     display: flex;
