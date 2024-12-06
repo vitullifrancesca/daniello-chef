@@ -3,60 +3,35 @@ body {
     font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Aggiungi box-sizing per evitare problemi di layout */
 }
 
 /* Stile del banner */
 #contatti-banner {
     display: flex;
-    justify-content: space-between; /* Distribuisce gli elementi orizzontalmente */
-    align-items: center; /* Allinea verticalmente gli elementi */
-    padding: 10px 20px; /* Aggiunge padding attorno al contenuto */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #800000;
     color: white;
+    flex-wrap: wrap; /* Aggiungi wrap per gestire il contenuto che non sta nella stessa riga */
 }
 
 /* Icona di Instagram */
 #contatti-banner img {
-    width: 30px; /* Riduce la dimensione dell'icona */
+    width: 30px;
     height: 30px;
-    object-fit: contain; /* Mantiene le proporzioni */
+    object-fit: contain;
 }
 
 /* Contenitore di "Contatti" */
 #contatti, #footer-contatti {
-    margin-right: 15px; /* Riduce lo spazio tra le sezioni */
+    margin-right: 15px;
+    flex: 1;
+    min-width: 100px; /* Imposta una larghezza minima per evitare che gli elementi scompaiano */
 }
 
-#contatti {
-    flex: 1; /* Allow "Contattami" to take available space */
-}
-
-#footer-contatti {
-    flex: 1; /* Allow "Contatti" to take available space */
-}
-
-form div {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-#galleria a {
-    color: black;
-}
-
-body {
-    font-family: "Courier New", Courier, monospace;
-}
-
-/* Stile della navbar */
+/* Modifiche alla navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -65,7 +40,6 @@ body {
     padding: 10px 0;
 }
 
-/* Lista della navbar */
 .navbar ul {
     display: flex;
     list-style: none;
@@ -74,13 +48,11 @@ body {
     margin: 0;
 }
 
-/* Elementi della navbar */
 .navbar li {
     display: flex;
     align-items: center;
 }
 
-/* Link della navbar */
 .navbar a {
     color: white;
     text-decoration: none;
@@ -88,7 +60,6 @@ body {
     padding: 8px;
 }
 
-/* Icona della navbar */
 .navbar img {
     width: 30px;
     height: 30px;
@@ -97,65 +68,86 @@ body {
 /* Stile del contenitore "storia-container" */
 .storia-container {
     display: flex;
-    flex-direction: column; /* Dispone immagine e testo in verticale */
-    background-color: white; /* Sfondo bianco */
+    flex-direction: column;
+    background-color: white;
     padding: 20px;
-    border: 2px solid #800000; /* Bordo bordeaux */
+    border: 2px solid #800000;
     border-radius: 10px;
-    color: #800000; /* Colore del testo bordeaux */
+    color: #800000;
+    margin-bottom: 20px; /* Aggiungi spazio tra le storie */
 }
 
+/* Storia: Immagine */
 .storia-img {
-    width: 100%; /* L'immagine occupa tutta la larghezza */
-    text-align: center; /* Centra l'immagine orizzontalmente */
+    width: 100%;
+    text-align: center;
 }
 
 .storia-img img {
-    max-width: 100%; /* L'immagine si adatta alla larghezza della pagina */
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
+/* Storia: Testo */
 .storia-text {
-    width: 100%; /* Il testo occupa tutta la larghezza */
-    text-align: justify; /* Giustifica il testo */
-    font-size: 1.1em; /* Regola la dimensione del font */
-    margin: 20px 0; /* Spazio sopra e sotto */
-    padding: 0; /* Rimuove padding extra */
+    width: 100%;
+    text-align: justify;
+    font-size: 1.1em;
+    margin: 20px 0;
+    padding: 0;
 }
 
-/* Media query per schermi piccoli (mobile) */
+/* Modifiche per la versione mobile (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Modifica la navbar per schermi più piccoli */
+    /* Navbar in verticale */
     .navbar ul {
-        flex-direction: column; /* Dispone gli elementi in colonna */
-        gap: 10px; /* Riduce la distanza tra gli elementi */
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* Modifica il layout del banner */
+    /* Banner che si adatta meglio ai dispositivi mobili */
     #contatti-banner {
-        flex-direction: column; /* Dispone gli elementi in colonna */
-        padding: 20px; /* Aumenta il padding */
+        flex-direction: column; /* Dispone gli elementi in verticale */
+        padding: 20px; /* Aumenta il padding per maggiore spaziatura */
     }
 
-    /* Adatta il contenuto della "storia-container" */
+    /* Modifica il layout della storia-container */
     .storia-container {
-        flex-direction: column; /* Dispone immagine e testo in verticale */
+        padding: 15px; /* Riduci il padding per dispositivi mobili */
     }
 
-    .storia-img, .storia-text {
-        width: 100%; /* Assicura che immagine e testo occupino tutta la larghezza */
-    }
-
-    /* Ridimensiona l'immagine nella versione mobile */
+    /* Adatta l'immagine nella storia */
     .storia-img img {
         max-width: 100%;
         height: auto;
     }
 
-    /* Riduce la dimensione del testo nella versione mobile */
+    /* Testo della storia */
     .storia-text {
         font-size: 1em; /* Riduce la dimensione del font */
-        margin: 10px 0; /* Riduce lo spazio tra i paragrafi */
+        margin: 15px 0; /* Riduce la distanza tra i paragrafi */
+    }
+
+    /* Contenitore delle immagini, in modo che stiano tutte su una sola colonna */
+    .storia-container {
+        display: block; /* Dispone gli elementi in una colonna */
+    }
+
+    /* Modifica della larghezza degli input e dei form */
+    input, textarea {
+        width: 100%;
+    }
+
+    /* Modifiche alla navbar */
+    .navbar a {
+        font-size: 16px; /* Riduce la dimensione del font per i link della navbar */
+        padding: 6px;
+    }
+
+    /* Rendi più piccoli gli spazi per la versione mobile */
+    #contatti, #footer-contatti {
+        flex: 1;
+        min-width: 100%; /* Forza l'elemento a occupare tutta la larghezza disponibile */
     }
 }
