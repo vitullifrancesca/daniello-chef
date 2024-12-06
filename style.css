@@ -6,42 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #800000;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 20px; /* Spaziatura tra i link */
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap; /* Permette ai link di andare su più righe se necessario */
-}
-
-.navbar li {
-    display: flex;
-    align-items: center;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 12px; /* Spazio interno ai link */
-    border-radius: 5px; /* Angoli arrotondati */
-    transition: background-color 0.3s ease; /* Effetto al passaggio del mouse */
-}
-
-.navbar a:hover {
-    background-color: #600000; /* Cambia colore di sfondo al passaggio del mouse */
-}
-
 /* Banner contatti */
 #contatti-banner {
     display: flex;
@@ -49,7 +13,7 @@ body {
     padding: 20px;
     background-color: #800000;
     color: white;
-    flex-wrap: wrap; /* Permette di adattare il contenuto su più righe */
+    flex-wrap: wrap; /* Adatta il contenuto su più righe per dispositivi piccoli */
 }
 
 #contatti, #footer-contatti {
@@ -74,6 +38,41 @@ input, textarea {
 /* Galleria */
 #galleria a {
     color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #800000;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Consente di andare su più righe per dispositivi piccoli */
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.navbar img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Contenitore Storia */
@@ -108,32 +107,30 @@ input, textarea {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-wrap: nowrap; /* Mantiene i link su una sola riga */
-        overflow-x: auto; /* Aggiunge uno scroll orizzontale se necessario */
-        gap: 10px; /* Riduce la spaziatura tra i link */
-    }
-
-    .navbar a {
-        font-size: 16px; /* Riduce leggermente la dimensione del testo */
-        padding: 6px 10px; /* Riduce il padding per adattarsi meglio agli schermi piccoli */
-    }
-
     #contatti-banner {
         flex-direction: column; /* Dispone i blocchi in verticale */
         text-align: center;
     }
 
     #contatti, #footer-contatti {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 0; /* Rimuove il margine laterale */
+        margin-bottom: 10px; /* Aggiunge spazio verticale */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Dispone gli elementi della navbar in verticale */
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px; /* Riduce leggermente la dimensione del testo */
     }
 
     .storia-container {
-        padding: 10px;
+        padding: 10px; /* Riduce il padding */
     }
 
     .storia-text {
-        font-size: 1em;
+        font-size: 1em; /* Riduce la dimensione del testo */
     }
 }
