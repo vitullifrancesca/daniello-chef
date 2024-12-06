@@ -156,5 +156,5 @@ body {
 
 /* Cambia il colore della scritta "Galleria" in bianco */
 #galleria a {
-    color: black; /* Imposta il colore del link su bianco */
+    color: white; /* Imposta il colore del link su bianco */
 }
